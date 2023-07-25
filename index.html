@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Marker</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon (1).ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container ">
+        <h1 class="text-center p-5 m-auto ">Bookmarker</h1>
+        <hr>
+        <h4 class="text-center my-3"><i class="fa-solid fa-bookmark p-1"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark p-1"></i></h4>
+        <label for="siteName" class="m-2"><i class="fa-solid fa-book-bookmark p-1"></i>Site Name</label>
+        <input type="text" id="siteName" class="form-control " oninput="validateSiteName()" placeholder="Bookmark Name">
+        <label for="siteUrl" class="m-2"><i class="fa-solid fa-chain p-1"></i> Site URL</label>
+        <input type="text" id="siteUrl" class="form-control mb-3" oninput="validateUrl()" placeholder="Website Url">
+        <button onclick="addUrlList()" class=" btn btn-danger m-auto  px-3 d-flex justify-content-center align-content-center ">Submit</button>
+        <hr>
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="savedList">
+                
+            </tbody>
+        </table>
+
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(247,236,222);
+}
+
+
+.container h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    position: relative;
+    width: fit-content;
+   
+    display: flex;
+    justify-content: center;
+    
+}
+.container h1::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 15%;
+    left: 20px;
+    bottom: 50px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+}
+h1:hover::before{
+    height: 25%;
+
+}
+.container h4{
+    font-family: 'Righteous', cursive;
+    color:green;
+}
+hr{
+    border-top: 2px  dotted black;
+}
+.container label{
+    font-family: 'Righteous', cursive;
+}
